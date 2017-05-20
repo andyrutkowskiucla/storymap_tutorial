@@ -8,16 +8,13 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <style>
         body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+        #map { position:absolute; top:0; bottom:0; width:75%; }
     </style>
 </head>
 <body>
 
 <style>
-#map {
-    position: fixed;
-    width:50%;
-}
+
 #features {
     width: 50%;
     margin-left: 50%;
@@ -73,6 +70,14 @@ section:last-child {
             Github repo <a href='https://github.com/maptimeLA/storymap_tutorial'>Story Map Tutorial</a>
         </small>
     </section>
+     <section id='thesmell'>
+        <h3>The Smell</h3>
+        <img src="https://9968c6ef49dc043599a5-e151928c3d69a5a4a2d07a8bf3efa90a.ssl.cf2.rackcdn.com/362391.jpg">
+        <p>Save the Smell</p>
+        <small id="citation">
+            Github repo <a href='https://github.com/maptimeLA/storymap_tutorial'>Story Map Tutorial</a>
+        </small>
+    </section>
 </div>
 <script>
 
@@ -121,6 +126,10 @@ var chapters = {
     'unionstation': {
         center: [34.05573545250901, -118.23536853348772],
         zoom: 16
+    }
+     'thesmell': {
+        center: [34.051486053318534, -118.244406580925],
+        zoom: 18
     }
 };
 
